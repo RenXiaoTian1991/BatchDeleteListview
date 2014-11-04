@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.cy.R;
 import com.cy.adapter.MyAdapter;
@@ -154,12 +155,15 @@ public class MainActivity extends Activity implements OnClickListener {
 	// 删除
 	private void deleteCheckItem() {
 		Iterator<Dog> iterator = mDogs.iterator();
+		int count = 0;
 		while (iterator.hasNext()) {
 			Dog dog = iterator.next();
 			if (dog.isChecked()) {
+				count++;
 				iterator.remove();
 			}
 		}
+		Toast.makeText(MainActivity.this, "删除了" + count + "只狗", Toast.LENGTH_SHORT).show();
 	}
 
 	private void changeSelectText() {
@@ -175,7 +179,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 			if (mIsDeleteModel) {
 				addDeleteDog(position);
-				return;
+			} else {
+				Dog dog = (Dog) mDogs.get(position);
+				Toast.makeText(MainActivity.this, "点击了" + dog.getName(), Toast.LENGTH_SHORT).show();
 			}
 		}
 	}

@@ -11,6 +11,7 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
+        public static final int bottom_delete_bg=0x7f040005;
         /**  整体背景 
          */
         public static final int clearColor=0x7f040001;
