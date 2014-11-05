@@ -8,11 +8,11 @@ ListView有两种模式.即默认模式和编辑模式.当长点击某个条目�
 
 一：默认模式<br />
 
- ![image](https://github.com/cuiyue1988/BatchDeleteListview/raw/master/list_normal.png)<br />
+ ![image](https://github.com/cuiyue1988/BatchDeleteListview/raw/master/pic1.png)<br />
  
 二：编辑模式<br />
 
- ![image](https://github.com/cuiyue1988/BatchDeleteListview/raw/master/list_select.png)<br />
+ ![image](https://github.com/cuiyue1988/BatchDeleteListview/raw/master/pic2.png)<br />
  
 
 ### 联系作者：QQ 380920705
