@@ -23,6 +23,7 @@ import com.cy.entity.Dog;
 
 public class MainActivity extends Activity implements OnClickListener {
 
+
 	private ArrayList<Dog> mDogs;
 	private ListView mListView;
 	private MyAdapter mAdapter;
